@@ -5,3 +5,25 @@ CREATE TABLE noteEntity(
     colorHex INTEGER NOT NULL,
     created INTEGER NOT NULL
 );
+
+getAllNotes:
+SELECT *
+FROM noteEntity;
+
+getNote:
+SELECT *
+FROM noteEntity WHERE id = ?;
+
+insertNote:
+INSERT OR REPLACE
+INTO noteEntity(
+    id,
+    title,
+    content,
+    colorHex,
+    created
+) VALUES(?,?,?,?,?);
+
+deleteNote:
+DELETE FROM noteEntity
+WHERE id = ?;
