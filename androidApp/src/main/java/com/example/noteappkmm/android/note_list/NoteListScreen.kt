@@ -107,7 +107,6 @@ fun NoteListScreen(
                             .fillMaxWidth()
                             .padding(16.dp)
                             .animateItemPlacement()
-
                     )
                 }
             }

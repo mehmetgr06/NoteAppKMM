@@ -48,21 +48,21 @@ fun NoteItem(
         Row(
             horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically,
-            modifier = modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth()
         ) {
             Text(text = note.title, fontWeight = FontWeight.SemiBold, fontSize = 20.sp)
             Icon(
                 imageVector = Icons.Default.Close,
                 contentDescription = "Delete note",
-                modifier = modifier
+                modifier = Modifier
                     .clickable(MutableInteractionSource(), null) {
                         onDeleteClick()
                     }
             )
         }
-        Spacer(modifier = modifier.height(16.dp))
+        Spacer(modifier = Modifier.height(16.dp))
         Text(text = note.content, fontWeight = FontWeight.Light)
-        Spacer(modifier = modifier.height(16.dp))
-        Text(text = formattedDate, color = Color.DarkGray, modifier = modifier.align(Alignment.End))
+        Spacer(modifier = Modifier.height(16.dp))
+        Text(text = formattedDate, color = Color.DarkGray, modifier = Modifier.align(Alignment.End))
     }
 }
