@@ -43,7 +43,7 @@ fun SearchTextField(
         }
         AnimatedVisibility(
             visible = isSearchActive, enter = fadeIn(), exit = fadeOut(),
-            modifier = modifier.align(Alignment.CenterEnd)
+            modifier = Modifier.align(Alignment.CenterEnd)
         ) {
             IconButton(onClick = onCloseClick) {
                 Icon(imageVector = Icons.Default.Close, contentDescription = "Close search")
@@ -51,7 +51,7 @@ fun SearchTextField(
         }
         AnimatedVisibility(
             visible = isSearchActive.not(), enter = fadeIn(), exit = fadeOut(),
-            modifier = modifier.align(Alignment.CenterEnd)
+            modifier = Modifier.align(Alignment.CenterEnd)
         ) {
             IconButton(onClick = onSearchClick) {
                 Icon(imageVector = Icons.Default.Search, contentDescription = "Open search")
