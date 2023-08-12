@@ -13,6 +13,7 @@
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
 		C07866662A870924001B6ED8 /* NoteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07866652A870924001B6ED8 /* NoteListViewModel.swift */; };
 		C07866682A870A02001B6ED8 /* NoteListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07866672A870A02001B6ED8 /* NoteListScreen.swift */; };
+		C078666A2A8711E6001B6ED8 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07866692A8711E6001B6ED8 /* SearchTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,7 @@
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C07866652A870924001B6ED8 /* NoteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewModel.swift; sourceTree = "<group>"; };
 		C07866672A870A02001B6ED8 /* NoteListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListScreen.swift; sourceTree = "<group>"; };
+		C07866692A8711E6001B6ED8 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			children = (
 				C07866652A870924001B6ED8 /* NoteListViewModel.swift */,
 				C07866672A870A02001B6ED8 /* NoteListScreen.swift */,
+				C07866692A8711E6001B6ED8 /* SearchTextField.swift */,
 			);
 			path = note_list;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C078666A2A8711E6001B6ED8 /* SearchTextField.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
 				C07866682A870A02001B6ED8 /* NoteListScreen.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
