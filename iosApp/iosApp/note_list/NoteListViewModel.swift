@@ -52,6 +52,9 @@ extension NoteListScreen {
         
         func setNoteDataSource(dataSource: NoteDataSource) {
             self.noteDataSource = dataSource
+            dataSource.insertNote(note: Note(id: nil, title: "NOTE TITLE", content: "noteContent", colorHex: 0xFF2345, created: DateTimeUtil().now()), completionHandler: {
+                error in 
+            })
         }
     }
 }

@@ -16,6 +16,7 @@
 		C078666A2A8711E6001B6ED8 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07866692A8711E6001B6ED8 /* SearchTextField.swift */; };
 		C078666C2A8AA56B001B6ED8 /* NoteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C078666B2A8AA56B001B6ED8 /* NoteItem.swift */; };
 		C078666E2A8AA934001B6ED8 /* ColorsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C078666D2A8AA934001B6ED8 /* ColorsUtil.swift */; };
+		C07866712A8CE5C6001B6ED8 /* NoteDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07866702A8CE5C6001B6ED8 /* NoteDetailScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,7 @@
 		C07866692A8711E6001B6ED8 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 		C078666B2A8AA56B001B6ED8 /* NoteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteItem.swift; sourceTree = "<group>"; };
 		C078666D2A8AA934001B6ED8 /* ColorsUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsUtil.swift; sourceTree = "<group>"; };
+		C07866702A8CE5C6001B6ED8 /* NoteDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 		7555FF7D242A565900829871 /* iosApp */ = {
 			isa = PBXGroup;
 			children = (
+				C078666F2A8CE5B2001B6ED8 /* note_detail */,
 				C07866642A8708C1001B6ED8 /* note_list */,
 				058557BA273AAA24004C7B11 /* Assets.xcassets */,
 				7555FF82242A565900829871 /* ContentView.swift */,
@@ -111,6 +114,14 @@
 				C078666B2A8AA56B001B6ED8 /* NoteItem.swift */,
 			);
 			path = note_list;
+			sourceTree = "<group>";
+		};
+		C078666F2A8CE5B2001B6ED8 /* note_detail */ = {
+			isa = PBXGroup;
+			children = (
+				C07866702A8CE5C6001B6ED8 /* NoteDetailScreen.swift */,
+			);
+			path = note_detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +218,7 @@
 			files = (
 				C078666C2A8AA56B001B6ED8 /* NoteItem.swift in Sources */,
 				C078666A2A8711E6001B6ED8 /* SearchTextField.swift in Sources */,
+				C07866712A8CE5C6001B6ED8 /* NoteDetailScreen.swift in Sources */,
 				C078666E2A8AA934001B6ED8 /* ColorsUtil.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
 				C07866682A870A02001B6ED8 /* NoteListScreen.swift in Sources */,
