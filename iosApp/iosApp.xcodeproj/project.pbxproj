@@ -16,7 +16,8 @@
 		C078666A2A8711E6001B6ED8 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07866692A8711E6001B6ED8 /* SearchTextField.swift */; };
 		C078666C2A8AA56B001B6ED8 /* NoteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C078666B2A8AA56B001B6ED8 /* NoteItem.swift */; };
 		C078666E2A8AA934001B6ED8 /* ColorsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C078666D2A8AA934001B6ED8 /* ColorsUtil.swift */; };
-		C07866712A8CE5C6001B6ED8 /* NoteDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07866702A8CE5C6001B6ED8 /* NoteDetailScreen.swift */; };
+		C07866732A8CF156001B6ED8 /* NoteDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07866722A8CF156001B6ED8 /* NoteDetailViewModel.swift */; };
+		C07866752A8CF8FD001B6ED8 /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07866742A8CF8FD001B6ED8 /* NoteDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,7 +45,8 @@
 		C07866692A8711E6001B6ED8 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 		C078666B2A8AA56B001B6ED8 /* NoteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteItem.swift; sourceTree = "<group>"; };
 		C078666D2A8AA934001B6ED8 /* ColorsUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsUtil.swift; sourceTree = "<group>"; };
-		C07866702A8CE5C6001B6ED8 /* NoteDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailScreen.swift; sourceTree = "<group>"; };
+		C07866722A8CF156001B6ED8 /* NoteDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewModel.swift; sourceTree = "<group>"; };
+		C07866742A8CF8FD001B6ED8 /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +121,8 @@
 		C078666F2A8CE5B2001B6ED8 /* note_detail */ = {
 			isa = PBXGroup;
 			children = (
-				C07866702A8CE5C6001B6ED8 /* NoteDetailScreen.swift */,
+				C07866722A8CF156001B6ED8 /* NoteDetailViewModel.swift */,
+				C07866742A8CF8FD001B6ED8 /* NoteDetailView.swift */,
 			);
 			path = note_detail;
 			sourceTree = "<group>";
@@ -217,10 +220,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C078666C2A8AA56B001B6ED8 /* NoteItem.swift in Sources */,
+				C07866752A8CF8FD001B6ED8 /* NoteDetailView.swift in Sources */,
 				C078666A2A8711E6001B6ED8 /* SearchTextField.swift in Sources */,
-				C07866712A8CE5C6001B6ED8 /* NoteDetailScreen.swift in Sources */,
 				C078666E2A8AA934001B6ED8 /* ColorsUtil.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
+				C07866732A8CF156001B6ED8 /* NoteDetailViewModel.swift in Sources */,
 				C07866682A870A02001B6ED8 /* NoteListScreen.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
 				C07866662A870924001B6ED8 /* NoteListViewModel.swift in Sources */,

@@ -22,21 +22,21 @@ struct NoteListScreen: View {
     
     var body: some View {
         VStack {
-            ZStack { 
-                NavigationLink(destination: NoteDetailScreen(noteDataSource: self.noteDataSource,
+            ZStack {
+                NavigationLink(destination: NoteDetailView(noteDataSource: self.noteDataSource,
                     noteId: selectedNoteId
                     ),
                     isActive: $isNoteSelected
                 ) {
                     EmptyView()
                 }.hidden()
-                SearchTextField<EmptyView>(
+                SearchTextField<NoteDetailView>(
                     onSearchToggled: {
                         viewModel.toggleIsSearchActive()
                         
                     },
                     destinationProvider: {
-                        EmptyView()
+                        NoteDetailView(noteDataSource: noteDataSource)
                     },
                     isSearchActive: viewModel.isSearchActive,
                     searchText: $viewModel.searchText
