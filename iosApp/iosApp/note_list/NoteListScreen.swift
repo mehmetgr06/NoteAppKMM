@@ -7,10 +7,60 @@
 //
 
 import SwiftUI
+import shared
 
 struct NoteListScreen: View {
+    private var noteDataSource: NoteDataSource
+    @StateObject var viewModel = NoteListViewModel(noteDataSource: nil)
+    
+    init(noteDataSource: NoteDataSource) {
+        self.noteDataSource = noteDataSource
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            ZStack {
+                SearchTextField<EmptyView>(
+                    onSearchToggled: {
+                        viewModel.toggleIsSearchActive()
+                        
+                    },
+                    destinationProvider: {
+                        EmptyView()
+                    },
+                    isSearchActive: viewModel.isSearchActive,
+                    searchText: $viewModel.searchText
+                )
+                    .frame(maxWidth: .infinity, minHeight: 40)
+                    .padding()
+                
+                if !viewModel.isSearchActive {
+                    Text("All Notes")
+                        .font(.title2)
+                }
+                
+                List {
+                    ForEach(viewModel.filteredNotes, id: \.self.id) { note in
+                        Button(action: {
+                            
+                        }) {
+                            NoteItem(note: note, onDeleteClick: {
+                                viewModel.deleteNote(
+                                    id:note.id?.int64Value
+                                )
+                            })
+                        }
+                    }
+                    
+                }.onAppear {
+                    viewModel.loadNotes()
+                }
+                .listStyle(.plain)
+                .listRowSeparator(.hidden)
+            }
+        }.onAppear {
+            viewModel.setNoteDataSource(dataSource: noteDataSource)
+        }
     }
 }
 
